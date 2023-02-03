@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="!drawerOpen"
-    class="bg-mobile-hero-pattern bg-no-repeat pt-10 px-8 pb-52 md:bg-desktop-hero-pattern 2xl:pt-16 2xl:px-40"
+    class="bg-mobile-hero-pattern bg-no-repeat pt-10 px-8 pb-52 md:bg-desktop-hero-pattern xl:pt-16 xl:px-40"
   >
     <div class="flex justify-between items-center">
       <div><img v-bind:src="logoUrl" alt="logo" /></div>
@@ -23,7 +23,7 @@
     </div>
     <div class="border-2 mt-48 xl:inline-block xl:w-3/5 xl:mt-32">
       <h1
-        class="text-brand-primary-white font-brand-2 text-5xl p-4 sm:text-center xl:text-7xl xl:text-start xl:p-8"
+        class="text-brand-primary-white font-brand-2 text-[2.5rem] p-4 sm:text-center xl:text-7xl xl:text-start xl:p-8"
       >
         IMMERSIVE EXPERIENCES THAT DELIVER
       </h1>
@@ -74,5 +74,11 @@ hr {
 
 a:active + hr {
   visibility: visible;
+}
+
+@media (max-width: 355px) {
+  h1 {
+    font-size: theme("fontSize.3xl");
+  }
 }
 </style>
