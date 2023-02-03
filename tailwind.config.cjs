@@ -17,7 +17,7 @@ module.exports = {
       },
       fontFamily: {
         Alata: ["Alata", "sans-serif"],
-        "Josefin": ["Josefin Sans", "sans-serif"],
+        Josefin: ["Josefin Sans", "sans-serif"],
       },
     },
   },

@@ -1,19 +1,19 @@
 {
-    "recommendations": [
-        "eamodio.gitlens",
-        "pkief.material-icon-theme",
-        "christian-kohler.path-intellisense",
-        "visualstudioexptteam.intellicode-api-usage-examples",
-        "christian-kohler.npm-intellisense",
-        "naumovs.color-highlight",
-        "vscodevim.vim",
-        "oderwat.indent-rainbow",
-        "aaron-bond.better-comments",
-        "wayou.vscode-todo-highlight",
-        "gruntfuggly.todo-tree",
-        "ms-vscode.vscode-typescript-next",
-        "kisstkondoros.vscode-gutter-preview",
-        "jock.svg",
-        "streetsidesoftware.code-spell-checker"
-    ]
+  "recommendations": [
+    "eamodio.gitlens",
+    "pkief.material-icon-theme",
+    "christian-kohler.path-intellisense",
+    "visualstudioexptteam.intellicode-api-usage-examples",
+    "christian-kohler.npm-intellisense",
+    "naumovs.color-highlight",
+    "vscodevim.vim",
+    "oderwat.indent-rainbow",
+    "aaron-bond.better-comments",
+    "wayou.vscode-todo-highlight",
+    "gruntfuggly.todo-tree",
+    "ms-vscode.vscode-typescript-next",
+    "kisstkondoros.vscode-gutter-preview",
+    "jock.svg",
+    "streetsidesoftware.code-spell-checker"
+  ]
 }
