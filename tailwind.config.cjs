@@ -16,8 +16,12 @@ module.exports = {
         base: "15px",
       },
       fontFamily: {
-        Alata: ["Alata", "sans-serif"],
-        Josefin: ["Josefin Sans", "sans-serif"],
+        "brand-1": ["Alata", "sans-serif"],
+        "brand-2": ["Josefin Sans", "sans-serif"],
+      },
+      backgroundImage: {
+        "mobile-hero-pattern": "url('/src/assets/mobile/image-hero.jpg')",
+        "desktop-hero-pattern": "url('/src/assets/desktop/image-hero.jpg')",
       },
     },
   },
