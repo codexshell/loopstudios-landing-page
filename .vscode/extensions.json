@@ -15,6 +15,10 @@
     "kisstkondoros.vscode-gutter-preview",
     "jock.svg",
     "streetsidesoftware.code-spell-checker",
-    "astro-build.astro-vscode"
+    "astro-build.astro-vscode",
+    "vue.volar",
+    "bradlc.vscode-tailwindcss",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint"
   ]
 }
