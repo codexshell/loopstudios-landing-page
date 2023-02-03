@@ -11,6 +11,9 @@
     "astro": "astro",
     "prepare": "husky install"
   },
+  "engines": {
+    "node": "16.19.0"
+  },
   "dependencies": {
     "@astrojs/tailwind": "^3.0.0",
     "astro": "^2.0.2",
