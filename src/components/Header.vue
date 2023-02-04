@@ -1,37 +1,37 @@
 <template>
   <div
     v-if="!drawerOpen"
-    class="bg-mobile-hero-pattern bg-no-repeat pt-10 px-8 pb-52 md:bg-desktop-hero-pattern xl:pt-16 xl:px-40"
+    class="bg-mobile-hero-pattern bg-no-repeat px-8 pt-10 pb-52 md:bg-desktop-hero-pattern xl:px-40 xl:pt-16"
   >
-    <div class="flex justify-between items-center">
+    <div class="flex items-center justify-between">
       <div><img v-bind:src="logoUrl" alt="logo" /></div>
       <button class="xl:hidden" v-on:click="handleClick">
         <img v-bind:src="hamburgerUrl" alt="main menu" />
       </button>
       <nav class="hidden xl:block">
         <ul
-          class="hidden xl:flex xl:gap-6 xl:text-brand-primary-white xl:font-brand-1"
+          class="hidden xl:flex xl:gap-6 xl:font-brand-1 xl:text-brand-primary-white"
         >
           <li v-for="navigation in navigationList" v-bind:key="navigation">
             <a v-on:click.prevent href="/">{{ navigation }}</a>
             <hr
-              class="border-[.1rem] hover:border-[0.1rem] w-6 mx-auto mt-[0.25rem]"
+              class="mx-auto mt-[0.25rem] w-6 border-[.1rem] hover:border-[0.1rem]"
             />
           </li>
         </ul>
       </nav>
     </div>
-    <div class="border-2 mt-48 xl:inline-block xl:w-3/5 xl:mt-32">
+    <div class="mt-48 border-2 xl:mt-32 xl:inline-block xl:w-3/5">
       <h1
-        class="text-brand-primary-white font-brand-2 text-[2.5rem] p-4 sm:text-center xl:text-7xl xl:text-start xl:p-8"
+        class="p-4 font-brand-2 text-[2.5rem] text-brand-primary-white sm:text-center xl:p-8 xl:text-start xl:text-7xl"
       >
         IMMERSIVE EXPERIENCES THAT DELIVER
       </h1>
     </div>
   </div>
 
-  <div v-if="drawerOpen" class="bg-brand-primary-black pt-10 px-8 pb-52">
-    <div class="flex justify-between items-center">
+  <div v-if="drawerOpen" class="bg-brand-primary-black px-8 pt-10 pb-52">
+    <div class="flex items-center justify-between">
       <div><img v-bind:src="logoUrl" alt="logo" /></div>
       <button v-on:click="handleClick">
         <img v-bind:src="iconCloseUrl" alt="main menu" />
@@ -41,7 +41,7 @@
       <nav>
         <ul class="sm:text-center">
           <li
-            class="text-brand-primary-white uppercase font-brand-2 text-3xl [&:not(:first-child)]:mt-8"
+            class="font-brand-2 text-3xl uppercase text-brand-primary-white [&:not(:first-child)]:mt-8"
             v-for="navigation in navigationList"
             v-bind:key="navigation"
           >
