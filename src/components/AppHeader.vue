@@ -60,11 +60,15 @@ import logoUrl from "../assets/logo.svg";
 import hamburgerUrl from "../assets/icon-hamburger.svg";
 import iconCloseUrl from "../assets/icon-close.svg";
 import { navigationList } from "../data/header";
-import { ref } from "vue";
+import { reactive, toRef } from "vue";
 
-let drawerOpen = $ref(false);
+const state = reactive({
+  drawerOpen: false,
+});
 
-const handleClick = () => (drawerOpen = !drawerOpen);
+const handleClick = () => (state.drawerOpen = !state.drawerOpen);
+
+const drawerOpen = toRef(state, "drawerOpen");
 </script>
 
 <style scoped>
