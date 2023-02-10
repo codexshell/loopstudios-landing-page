@@ -1,0 +1,85 @@
+---
+import imgInteractiveMobileUrl from "../assets/mobile/image-interactive.jpg";
+import imgInteractiveDesktopUrl from "../assets/desktop/image-interactive.jpg";
+import { mobileImageList, desktopImageList } from "../data";
+import BaseButton from "./BaseButton.astro";
+
+type Image = {
+  url: string;
+  alt: string;
+};
+---
+
+<main class="mx-6 pt-28 pb-32 text-center xl:mx-44">
+  <section class="relative">
+    <div>
+      <img
+        srcset={`${imgInteractiveMobileUrl} 650w, ${imgInteractiveDesktopUrl} 730w`}
+        sizes="(max-width: 640px) 650px,
+                                  730px"
+        src={imgInteractiveDesktopUrl}
+        alt="image of a man wearing a VR Headset"
+        class="mx-auto xl:mx-0"
+      />
+    </div>
+    <div
+      class="xl:absolute xl:top-48 xl:-right-60 xl:max-w-3xl xl:bg-brand-primary-white xl:p-12 xl:px-32 xl:pr-48 xl:text-start"
+    >
+      <h2 class="mt-12 font-brand-2 text-4xl xl:text-5xl">
+        THE LEADER IN INTERACTIVE VR
+      </h2>
+      <p
+        class="mt-4 font-brand-1 text-base leading-relaxed text-brand-primary-gray-2"
+      >
+        Founded in 2011, Loopstudios has been producing world-class virtual
+        reality projects for some of the best companies around the globe. Our
+        award-winning creations have transformed businesses through digital
+        experiences that bind to their brand.
+      </p>
+    </div>
+  </section>
+
+  <section class="xl:mt-44">
+    <div class="flex justify-between">
+      <h2 class="mt-28 font-brand-2 text-4xl xl:mt-0 xl:text-5xl">
+        OUR CREATIONS
+      </h2>
+      <div class="hidden xl:block">
+        <BaseButton>See all</BaseButton>
+      </div>
+    </div>
+    <div class="xl:hidden">
+      {
+        // mobile images
+        mobileImageList.map((image: Image) => (
+          <div class="group relative mt-6 [&:first-child]:mt-12">
+            <img
+              src={image.url}
+              alt={image.alt}
+              class="mx-auto brightness-50"
+            />
+            <span class="absolute top-[65%] left-5 w-1/2 -translate-y-1/2 text-start font-brand-2 text-2xl text-white group-first:w-1/3 group-[&:nth-child(4)]:w-1/3 sm:left-10 md:left-20 lg:left-56">
+              {image.alt}
+            </span>
+          </div>
+        ))
+      }
+    </div>
+    <div class="mt-20 mb-12 hidden grid-cols-4 gap-8 text-start xl:grid">
+      {
+        // desktop images
+        desktopImageList.map((image: Image) => (
+          <div class="group relative">
+            <img src={image.url} alt={image.alt} class="brightness-75" />
+            <span class="absolute bottom-8 left-10 w-40 font-brand-2 text-3xl text-brand-primary-white group-[&:nth-child(4)]:w-20">
+              {image.alt}
+            </span>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+  <div class="mt-10 xl:hidden">
+    <BaseButton>See all</BaseButton>
+  </div>
+</main>
