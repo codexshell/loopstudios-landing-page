@@ -1,9 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import AppHeader from "../components/AppHeader.vue";
+import AppMain from "../components/AppMain.astro";
 ---
 
 <Layout title="Loopstudios landing page">
   <AppHeader client:load />
-  <main></main>
+  <AppMain />
 </Layout>

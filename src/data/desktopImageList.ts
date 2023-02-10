@@ -1,0 +1,24 @@
+import imgDeepEarthUrl from "../assets/desktop/image-deep-earth.jpg";
+import imgNightArcadeUrl from "../assets/desktop/image-night-arcade.jpg";
+import imgSoccerTeamUrl from "../assets/desktop/image-soccer-team.jpg";
+import imgTheGridUrl from "../assets/desktop/image-grid.jpg";
+import imgFromUpAboveUrl from "../assets/desktop/image-from-above.jpg";
+import imgPocketBorealis from "../assets/desktop/image-pocket-borealis.jpg";
+import imgTheCuriosity from "../assets/desktop/image-curiosity.jpg";
+import imgFishEye from "../assets/desktop/image-fisheye.jpg";
+
+type Image = {
+  url: string;
+  alt: string;
+};
+
+export const desktopImageList: Image[] = [
+  { url: imgDeepEarthUrl, alt: "DEEP EARTH" },
+  { url: imgNightArcadeUrl, alt: "NIGHT ARCADE" },
+  { url: imgSoccerTeamUrl, alt: "SOCCER TEAM VR" },
+  { url: imgTheGridUrl, alt: "THE GRID" },
+  { url: imgFromUpAboveUrl, alt: "FROM UP ABOVE VR" },
+  { url: imgPocketBorealis, alt: "POCKET BOREALIS" },
+  { url: imgTheCuriosity, alt: "THE CURIOSITY" },
+  { url: imgFishEye, alt: "MAKE IT FISHEYE" },
+];
