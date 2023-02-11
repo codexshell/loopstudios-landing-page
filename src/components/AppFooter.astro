@@ -1,0 +1,43 @@
+---
+import { footerLinksList, socialLinksList } from "../data";
+import logoUrl from "../assets/logo.svg";
+
+const date = new Date().getFullYear();
+---
+
+<footer
+  class="bg-brand-primary-black py-16 text-center text-brand-primary-white xl:flex xl:justify-between xl:px-44 xl:text-start"
+>
+  <div>
+    <div><img src={logoUrl} alt="Logo" class="mx-auto xl:mx-0" /></div>
+    <ul class="mt-6 flex flex-col gap-4 font-brand-1 text-lg xl:flex-row">
+      {
+        footerLinksList.map((footerLink) => (
+          <li>
+            <>
+              <a href="#" class="group">
+                {footerLink}
+                <hr class="invisible mx-auto mt-1 w-8 border-t-2 group-active:visible" />
+              </a>
+            </>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <div>
+    <div class="mt-12 flex justify-center gap-6 xl:mt-0 xl:justify-end">
+      {
+        socialLinksList.map((socialLink) => (
+          <div class="group cursor-pointer">
+            <img src={socialLink.url} alt={socialLink.alt} />
+            <hr class="invisible mx-auto mt-2 w-6 border-t-2 group-active:visible" />
+          </div>
+        ))
+      }
+    </div>
+    <p class="mt-6 font-brand-1 text-brand-primary-gray-1">
+      &copy; {date} Loopstudios. All rights reserved.
+    </p>
+  </div>
+</footer>
