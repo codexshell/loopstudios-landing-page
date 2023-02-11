@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [source code](https://github.com/codexshell/loopstudios-landing-page)
+- Live Site URL: [live site](https://loopstudios-landing-page-bk0.pages.dev/#)
 
 ## My process
 
